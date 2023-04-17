@@ -1,5 +1,7 @@
-module.exports = {
-  env: {
-    API_URL: '', // or the correct API URL
+const withImages = require('@svgr/webpack');
+
+module.exports = withImages({
+  webpack(config, options) {
+    return config;
   },
-};
+});
