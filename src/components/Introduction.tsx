@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import MockupImage from '../assets/Phonemockup.svg';
+import MockupImage from '../assets/phonemockup.svg';
 import Modal from 'react-modal';
 import Link from 'next/link';
 
