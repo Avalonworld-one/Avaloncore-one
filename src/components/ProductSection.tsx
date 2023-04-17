@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import ProductImage from '../assets/Twinmockup.svg';
+import ProductImage from '../assets/twinmockup.svg';
 import Link from 'next/link';
 
 const ProductSection: React.FC = () => {

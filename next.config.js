@@ -1,4 +1,4 @@
-const withImages = require('@svgr/webpack');
+const withImages = require('next-images');
 
 module.exports = withImages({
   webpack(config, options) {
