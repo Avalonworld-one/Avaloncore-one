@@ -2,7 +2,7 @@
   "name": "avalon-x",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:7071/api/getLinks",
+  "proxy": "",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
