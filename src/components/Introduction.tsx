@@ -83,16 +83,7 @@ const Introduction: React.FC = () => {
           },
         }}
       >
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1"
-          title="Avalon Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          frameBorder="0"
-          className="rounded"
-        ></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/4Gdhh9UsAG0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </Modal>
     </div>
   );
