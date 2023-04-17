@@ -1,0 +1,99 @@
+/* globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root {
+  --theme-color: #0a0a0a;
+}
+
+/* ... */
+
+.btn {
+  background-color: var(--theme-color);
+  /* ... */
+}
+
+/* Set default font family and size for the body */
+body {
+  background-color: var(--theme-color);
+}
+
+/* Remove default margin and padding for the html and body */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add a box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Add some global styles for links */
+a {
+  color: #E0E0E0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #A0AEC0;
+}
+
+/* Add some global styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Add some global styles for buttons */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Add these styles to your globals.css */
+.logo img {
+  width: 100px;
+  height: 50px;
+  margin-top: 13px;
+}
+
+
+
+/* You can adjust the width and height values inside the media query to fit your desired logo size on mobile devices */
