@@ -17,14 +17,13 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
+    npm install
     npm run build
-  displayName: 'Build website'
-
-- script: |
-    npm run export
-  displayName: 'Export static files'
-
-- task: PublishBuildArtifacts@1
+    npm test
+  displayName: 'npm install and build website'
+  
+- task: PublishTestResults@2
   inputs:
-    pathToPublish: 'out'
-    artifactName: 'website'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+
