@@ -3,6 +3,9 @@ trigger:
     include:
     - main
 
+variables:
+  - group: GitHubSecrets
+
 pool:
   vmImage: 'ubuntu-latest'
 
