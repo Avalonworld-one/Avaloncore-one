@@ -15,7 +15,7 @@ jobs:
 
       - name: Set up Git user
         run: |
-          git config --global user.email "sync-bot@example.com"
+          git config --global user.email "sync-bot@mycompany.com"
           git config --global user.name "Sync Bot"
 
       - name: Add GitHub remote
