@@ -94,6 +94,18 @@ button:hover {
   margin-top: 13px;
 }
 
+/* styles/globals.css */
+
+.phone-mockup-container {
+  width: 560px;
+  height: auto;
+}
+
+.phone-mockup-container img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 /* You can adjust the width and height values inside the media query to fit your desired logo size on mobile devices */

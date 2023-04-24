@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import ProductImage from '../assets/twinmockup.svg';
+import ProductImage from '../assets/twinmockf.svg';
 import Link from 'next/link';
 
 const ProductSection: React.FC = () => {
@@ -27,7 +27,8 @@ const ProductSection: React.FC = () => {
           </button>
         </Link> ***set the last page*/}
       </div>
-      <div className="order-2 flex justify-center items-center">
+       <div className="order-2 flex justify-center items-center">
+        <div phone-mockup-container >
         <Image
           src={ProductImage}
           alt="Product image"
@@ -37,6 +38,7 @@ const ProductSection: React.FC = () => {
         />
       </div>
     </div>
+   </div>
   );
 };
 
