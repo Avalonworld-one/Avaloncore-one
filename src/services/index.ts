@@ -1,3 +1,3 @@
 // src/services/index.ts
 
-export { fetchData } from './apiService';
+// export { fetchData } from './apiService';

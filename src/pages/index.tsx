@@ -7,16 +7,14 @@ import AvalonFeatures from '../components/AvalonFeatures';
 
 // Inside the component's JSX
 
-
-
 import { GetServerSideProps } from 'next';
-import { fetchData } from '../services/apiService';
+// import { fetchData } from '../services/apiService';
 
 interface HomepageProps {
-  data: any; // Replace 'any' with the appropriate data type
+  // data: any; // Replace 'any' with the appropriate data type
 }
 
-const Homepage: React.FC<HomepageProps> = ({ data }) => {
+const Homepage: React.FC<HomepageProps> = () => {
   return (
     <div>
       <Header />
@@ -31,11 +29,11 @@ const Homepage: React.FC<HomepageProps> = ({ data }) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const data = await fetchData();
+  // const data = await fetchData();
 
   return {
     props: {
-      data,
+      // data,
     },
   };
 };
