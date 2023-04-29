@@ -5,5 +5,11 @@
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.projectSubpath": "Avalon-Labs/azure-functions",
-    "azureFunctions.preDeployTask": "npm prune (functions)"
+    "azureFunctions.preDeployTask": "npm prune (functions)",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/cb1480a7-6680-42fa-9083-cc2cc976e508/resourceGroups/Avalonworldone_group-8a34/providers/Microsoft.Web/sites/Avalonworldone",
+    "appService.deploySubpath": "."
 }

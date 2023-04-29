@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
  
     steps:
+      - name: 'Checkout GitHub Actions'
       - uses: actions/checkout@v2
 
       - name: Set up Node.js version
