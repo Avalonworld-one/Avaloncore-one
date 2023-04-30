@@ -28,7 +28,7 @@ const ProductSection: React.FC = () => {
         </Link> ***set the last page*/}
       </div>
        <div className="order-2 flex justify-center items-center">
-        <div phone-mockup-container >
+        <div phone-mockup-container="true">
         <Image
           src={ProductImage}
           alt="Product image"

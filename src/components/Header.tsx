@@ -1,3 +1,4 @@
+// Component: Header.tsx
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Logo from '../assets/Logo.svg';
@@ -6,16 +7,22 @@ const Header: React.FC = () => {
   const [blur, setBlur] = useState(false);
 
   const handleScroll = () => {
-    setBlur(window.scrollY > 10); // Adjust the value for the desired scroll position to trigger the blur
+    // Check if window is defined before accessing it
+    if (typeof window !== 'undefined') {
+      setBlur(window.scrollY > 10); 
+    }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
+    // Check if window is defined before accessing it
+    if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', handleScroll);
+    
     // Clean up the listener when the component is unmounted
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, []);
 
   return (
