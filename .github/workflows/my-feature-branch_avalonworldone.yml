@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
- 
+
     steps:
       - uses: actions/checkout@v2
 
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Avalonworldone'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_46047F20790E45A0AB77B0C3E61FB63B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D8A520937E1843C58BC33FB7238DC430 }}
           package: .
