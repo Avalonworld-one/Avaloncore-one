@@ -18,14 +18,15 @@ const Introduction: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="max-w-7xl px-4 sm:px-6 md:px-8 mt-20 sm:mt-24 lg:mt-32 lg:grid lg:gap-8 lg:grid-cols-12 lg:items-center">
       <div>
       <h2 className="text-white text-6xl tracking-wide font-black mt-16 text-center">
-        Avalon: Enhance connectivity and foster limitless expansion.
+          AvalonCore: Bridging Tech Divide
+          Empower Business Expansion.
         </h2>
         <div>
         <p className="text-gray-600 sm:text-lg text-semibold tracking-wider mb-8 max-w-1xl text-center">
-          Avalon, the first Metaverse Operating System, revolutionizes digital interaction by enabling creativity, collaboration, and investment. Explore limitless possibilities in a world where imagination knows no boundaries.
+          Avalon, the First Metaverse Operating System, revolutionizes digital interaction by enabling creativity, collaboration, and investment. Explore limitless possibilities in a world where imagination knows no boundaries in the single App.
         </p>
 
  
