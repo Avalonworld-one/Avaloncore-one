@@ -10,7 +10,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
-      <Header />
+      <Header/>
       <main>
         {children}
       </main>
