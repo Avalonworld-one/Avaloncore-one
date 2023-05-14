@@ -13,17 +13,13 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 10, 10, 10;
+  --background-end-rgb: 8,8,8;
 
 }
 
 *, :after, :before {
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
-}
-
-.dark {
-  color-scheme: dark;
 }
 
 

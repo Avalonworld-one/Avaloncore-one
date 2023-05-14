@@ -31,8 +31,8 @@ const Introduction: React.FC = () => {
           
           <div className="mt-20 sm:mt-10 flex justify-center gap-4 text-sm">
             <div
-              className="bg-slate-900 text-center flex items-center sm:w-auto justify-center focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
-              focus:ring-offset-slate-50 text-gray-900 font-semibold border border-transparent h-12 px-4 space-x-3 rounded-lg dark:bg-yellow-500 dark:highlight-white/20 hover:bg-amber-300 whitespace-nowrap"
+              className="bg-amber-400 cursor-pointer text-center flex items-center sm:w-auto justify-center focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
+              focus:ring-offset-slate-50 text-zinc-800 font-semibold border border-transparent h-12 px-4 space-x-3 rounded-lg dark:bg-yellow-500 dark:highlight-white/20 hover:bg-amber-300 whitespace-nowrap"
               onClick={openModal}
             >
               Watch Avalon
@@ -41,8 +41,8 @@ const Introduction: React.FC = () => {
     
       
     
-            <button type="button" className="sm:flex items-center  text-left font-semibold px-4 h-12 space-x-3 bg-transparent border border-zinc-800 ring-1 hover:text-slate-900
-              hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-400 rounded-lg text-gray-400
+            <button type="button" className="sm:flex items-center  text-left font-semibold px-4 h-12 space-x-3 bg-transparent border border-gray-900 hover:text-slate-900
+              hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-amber-400 rounded-lg text-zinc-500
               dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
             <a 
               className="flex-auto text-center"

@@ -19,8 +19,8 @@ const Homepage: NextPage = () => {
 
       <Layout>
         <Introduction />
-        <ProductSection />
         <AvalonFeatures />
+        <ProductSection />
       </Layout>
     </>
   );

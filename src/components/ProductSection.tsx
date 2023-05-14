@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const ProductSection: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 justify-center items-center py-8 md:py-16 px-4 gap-8">
+    <div className="grid grid-cols-1 justify-center items-center py-8 md:py-16 px-4 gap-8 pt-20">
       <div className="order-1 md:text-left text-center">
         <h2 className="font-sans tracking-wide font-bold text-4xl py-6 px-6 md:text-4xl text-center lg:text-5xl mb-4 leading-snug bg-gradient-to-r from-amber-400 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
           TRANSFORM YOUR BUSINESS WITH AVALON
