@@ -1,9 +1,10 @@
 // components/AvalonFeatures.tsx
+//Main component of the landing page
 import React from "react";
 
 const AvalonFeatures: React.FC = () => {
   return (
-    <div className="max-w-5xl mx-auto pt-20 sm:pt-24 lg-pt-32 ">
+    <section className="relative max-w-7xl mx-auto pt-20 sm:pt-24 lg-pt-32 ">
       <div className="flex-initial sm:flex-col lg:flex-row sm:items-center lg:items-baseline justify-start p-0 gap-0">
         <h1
           className="text-center items-center justify-center text-4xl sm:text-5xl font-bold mb-8 shadow-md"
@@ -23,12 +24,16 @@ const AvalonFeatures: React.FC = () => {
         </p>
       </div>
 
-      <span className="sr-only">AvalonFeatures</span>
+      {/* Columns Container */}
+      <div className="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 mt-12 justify-center">
+      <h2 className="sr-only">AvalonFeatures</h2>
       <div className="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 mt-12 justify-center">
+       
+       
+          {/* column one */}
           <ul className="space-y-8">
             <a
-              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/avalon-core-features"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,7 +55,7 @@ const AvalonFeatures: React.FC = () => {
               </li>
             </a>
 
-            {/* 2 rows 1 column */}
+        
             <a
               href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
               target="_blank"
@@ -102,47 +107,162 @@ const AvalonFeatures: React.FC = () => {
             </a>
           </ul>
 
-          <a
-            href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-              <h3 className="text-xl text-slate-200 font-bold mb-2">
-                Feature 4
-              </h3>
-              <p className="text-zinc-500">Feature 4 description.</p>
-            </div>
-          </a>
+          {/* Column two */}
+          <ul className="space-y-8 hidden sm:block">
+            <a
+              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="text-sm leading-6">
+                <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
+                  <blockquote className="mt-6 text-zinc-500">
+                  <p>
+                      Avalon: Powering diverse applications from gaming to real
+                      estate, enabling creators and entrepreneurs to thrive in
+                      the digital realm.
+                    </p>
+                  </blockquote>
+                    <div className="flex-auto">
+                      <div className="text-base text-slate-200 font-semibold">
+                        <span>Feature 4</span>
+                      </div>
+                    </div>
+                </figure>
+              </li>
+            </a>
 
-          <a
-            href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-              <h3 className="text-xl text-slate-200 font-bold mb-2">
-                Feature 5
-              </h3>
-              <p className="text-zinc-500">Feature 5 description.</p>
-            </div>
-          </a>
+            <a
+              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="text-sm leading-6">
+                <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
+                  <blockquote className="mt-6 text-zinc-500">
+                  <p>
+                      Avalon: Powering diverse applications from gaming to real
+                      estate, enabling creators and entrepreneurs to thrive in
+                      the digital realm.
+                    </p>
+                  </blockquote>
+                    <div className="flex-auto">
+                      <div className="text-base text-slate-200 font-semibold">
+                        Feature 4
+                      </div>
+                    </div>
+                </figure>
+              </li>
+            </a>
 
-          <a
-            href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
-            target="_blank"
-            rel="noopener noreferrer"
+            <a
+              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="text-sm leading-6">
+                <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
+                  <blockquote className="mt-6 text-zinc-500">
+                  <p>
+                      Avalon: Powering diverse applications from gaming to real
+                      estate, enabling creators and entrepreneurs to thrive in
+                      the digital realm.
+                    </p>
+                  </blockquote>
+                    <div className="flex-auto">
+                      <div className="text-base text-slate-200 font-semibold">
+                        Feature 4
+                      </div>
+                    </div>
+                </figure>
+              </li>
+            </a>
+          </ul>
+
+          {/* Column three */}
+          <ul
+            className="space-y-8 hidden lg:block"
           >
-            <div className="bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-              <h3 className="text-xl text-slate-200 font-bold mb-2">
-                Feature 6
-              </h3>
-              <p className="text-zinc-500">Feature 6 description.</p>
-            </div>
-          </a>
-        </div>
+            <a
+              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="text-sm leading-6">
+                <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
+                  <blockquote className="mt-6 text-zinc-500">
+                    <p className="text-zinc-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolor, adipisci quam repudiandae harum iure odit sed, aut
+                      vel eaque, voluptas labore nisi omnis. Dolores temporibus
+                      eligendi quibusdam ea minus tenetur..
+                    </p>
+                  </blockquote>
+                    <div className="flex-auto">
+                      <span className="text-base text-slate-200 font-bold mb-2">
+                        Feature 7
+                      </span>
+                    </div>
+                </figure>
+              </li>
+            </a>
+
+            <a
+              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="text-sm leading-6">
+                <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
+                  <blockquote className="mt-6 text-zinc-500">
+                    <p className="text-zinc-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolor, adipisci quam repudiandae harum iure odit sed, aut
+                      vel eaque, voluptas labore nisi omnis. Dolores temporibus
+                      eligendi quibusdam ea minus tenetur..
+                    </p>
+                  </blockquote>
+                    <div className="flex-auto">
+                      <span className="text-base text-slate-200 font-bold mb-2">
+                        Feature 8
+                      </span>
+                    </div>
+                </figure>
+              </li>
+            </a>
+
+            <a
+              href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="text-sm leading-6">
+                <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
+                  <blockquote className="mt-6 text-zinc-500">
+                    <p className="text-zinc-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolor, adipisci quam repudiandae harum iure odit sed, aut
+                      vel eaque, voluptas labore nisi omnis. Dolores temporibus
+                      eligendi quibusdam ea minus tenetur..
+                    </p>
+                  </blockquote>
+                    <div className="flex-auto">
+                      <span className="text-base text-slate-200 font-bold mb-2">
+                        Feature 9
+                      </span>
+                    </div>
+                </figure>
+              </li>
+            </a>
+
+
+          </ul>
+
+      
       </div>
-    </div>
+      </div>
+    </section>
+
   );
 };
 

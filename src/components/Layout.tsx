@@ -8,14 +8,14 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
-      <div className="relative">
-        <div className="px-4 sm:px-6 md:px-8">
-          <Header />
-          <main>{children}</main>
-        </div>
+    <>
+    <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40" >
+      <Header />
+   
+      <main>{children}</main>
       </div>
-    </div>
+   
+      </>
   );
 };
 

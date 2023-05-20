@@ -1,3 +1,5 @@
+// components/ProductSection.tsx
+// Main component of the landing page
 import React from 'react';
 import Image from 'next/image';
 import ProductImage from '../assets/twinmockf.svg';
