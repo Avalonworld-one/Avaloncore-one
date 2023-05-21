@@ -4,8 +4,10 @@ import Head from 'next/head';
 import type { NextPage } from 'next';
 import Layout from '../components/Layout';
 import Introduction from '../components/Introduction';
+import GradientLine from '../components/GradientLine';
 import ProductSection from '../components/ProductSection';
 import AvalonFeatures from '../components/AvalonFeatures';
+import Testimonials from '../components/Testimonials';
 
 
 const Homepage: NextPage = () => {
@@ -19,8 +21,10 @@ const Homepage: NextPage = () => {
 
       <Layout>
         <Introduction />
+        <GradientLine />
         <AvalonFeatures />
         <ProductSection />
+        <Testimonials />
       </Layout>
     </>
   );

@@ -65,4 +65,41 @@ body {
   background-color: rgba(245, 194, 73);
 }
 
+
+
+.external:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 50%;
+  width: 0.0625rem;
+  height: 316px;
+  bottom: 0;
+  z-index: 1;
+  background: linear-gradient(180deg,hsla(0,0%,100%,.07),hsla(0, 0%, 100%, 0.575));
+}
+
+.external {
+  position: relative;
+  width: 100px;
+  height: 316px;
+  left: 50%;
+  margin-left: -51px;
+  align-items: center;
+  justify-content: center;
   
+}
+
+
+
+.crosshair {
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  z-index: 3;
+}
+

@@ -4,13 +4,13 @@ import React from "react";
 
 const AvalonFeatures: React.FC = () => {
   return (
-    <section className="relative max-w-7xl mx-auto pt-20 sm:pt-24 lg-pt-32 ">
+    <section className="relative max-w-7xl mx-auto mt-20 sm:pt-24 lg-pt-32 ">
       <div className="flex-initial sm:flex-col lg:flex-row sm:items-center lg:items-baseline justify-start p-0 gap-0">
         <h1
-          className="text-center items-center justify-center text-4xl sm:text-5xl font-bold mb-8 shadow-md"
+          className="text-center items-center justify-center text-3xl sm:text-4xl font-bold mb-8 shadow-md"
           style={{
             backgroundImage:
-              "linear-gradient(180deg, #ffff, hsla(0, 0%, 100%, .75))",
+              "linear-gradient(#fff, hsla(0, 0%, 100%, .75))",
             backgroundSize: "100% 200%",
             backgroundPosition: "right bottom",
             WebkitBackgroundClip: "text",
@@ -19,7 +19,7 @@ const AvalonFeatures: React.FC = () => {
         >
           What&apos;s in AvalonCore?
         </h1>
-        <p className="text-zinc-500 flex text-center items-center justify-center">
+        <p className="text-zinc-400 font-light flex text-center items-center justify-center">
           Enhancing your metaverse journey with Indispensable services.
         </p>
       </div>
@@ -37,9 +37,9 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black rounded-lg p-6 shadow-md border border-zinc-900 hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
                     <p>
                       Avalon: Powering diverse applications from gaming to real
                       estate, enabling creators and entrepreneurs to thrive in
@@ -61,9 +61,9 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black rounded-lg p-6 shadow-md border border-zinc-900 hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Nulla pariatur laborum placeat rerum explicabo quibusdam
@@ -86,9 +86,9 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black rounded-lg p-6 shadow-md border border-zinc-900 hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Nulla pariatur laborum placeat rerum explicabo quibusdam
@@ -114,9 +114,9 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
                   <p>
                       Avalon: Powering diverse applications from gaming to real
                       estate, enabling creators and entrepreneurs to thrive in
@@ -137,9 +137,9 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm  font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
                   <p>
                       Avalon: Powering diverse applications from gaming to real
                       estate, enabling creators and entrepreneurs to thrive in
@@ -160,9 +160,9 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm  font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
                   <p>
                       Avalon: Powering diverse applications from gaming to real
                       estate, enabling creators and entrepreneurs to thrive in
@@ -188,10 +188,10 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm  font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
-                    <p className="text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
+                    <p className="text-zinc-400">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Dolor, adipisci quam repudiandae harum iure odit sed, aut
                       vel eaque, voluptas labore nisi omnis. Dolores temporibus
@@ -212,10 +212,10 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm  font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
-                    <p className="text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
+                    <p className="text-zinc-400">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Dolor, adipisci quam repudiandae harum iure odit sed, aut
                       vel eaque, voluptas labore nisi omnis. Dolores temporibus
@@ -236,10 +236,10 @@ const AvalonFeatures: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="text-sm leading-6">
+              <li className="text-sm  font-extralight leading-6">
                 <figure className="relative flex flex-col-reverse bg-black p-6 rounded-lg shadow-md border border-transparent hover:border-white hover:bg-black transition-colors duration-200 ease-in">
-                  <blockquote className="mt-6 text-zinc-500">
-                    <p className="text-zinc-500">
+                  <blockquote className="mt-6 text-zinc-400">
+                    <p className="text-zinc-400">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Dolor, adipisci quam repudiandae harum iure odit sed, aut
                       vel eaque, voluptas labore nisi omnis. Dolores temporibus

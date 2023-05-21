@@ -1,5 +1,5 @@
 module.exports = {
-    content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       sans: [
@@ -9,6 +9,12 @@ module.exports = {
           fontVariationSettings: '"opsz" 32'
         },
       ],
+    },
   },
-},
-}
+  variants: {
+    extend: {
+      textColor: ['group-hover'],
+      stroke: ['group-hover'],
+    },
+  },
+};

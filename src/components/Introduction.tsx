@@ -21,12 +21,12 @@ const Introduction: React.FC = () => {
 
   return (
     <>
-      <div className="px-4 sm:px-6 md:px-8">
+      <div className="px-4 sm:px-6 md:px-8 pb-10">
         <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
-          <h1 className="text-zinc-50 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white whitespace-normal">
+          <h1 className="text-zinc-200 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center dark:text-white whitespace-normal drop-shadow-2xl">
             AvalonCore: Bridging Tech Divide Empower Business Expansion.
           </h1>
-          <p className="mt-6 text-lg text-gray-400 text-center max-w-3xl mx-auto dark:text-gray-400 whitespace-normal">
+          <p className="mt-6 text-lg text-zinc-400 font-light text-center max-w-3xl mx-auto dark:text-gray-400 whitespace-normal">
             Embrace the future with Avalon, redefining the metaverse through
             decentralization. Let&apos;s innovate, connect, and flourish in the
             new digital society together.
@@ -35,14 +35,14 @@ const Introduction: React.FC = () => {
           <div className="mt-20 sm:mt-10 flex justify-center gap-4 text-sm">
             <a
               className="bg-amber-400 cursor-pointer text-center flex items-center sm:w-auto justify-center focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
-              focus:ring-offset-slate-50 text-zinc-800 font-semibold border border-transparent h-12 px-4 space-x-3 rounded-lg dark:bg-yellow-500 dark:highlight-white/20 hover:bg-amber-300 whitespace-nowrap"
+              focus:ring-offset-slate-50 text-black font-normal border border-transparent h-12 px-4 space-x-3 rounded-lg dark:bg-yellow-500 dark:highlight-white/20 hover:bg-amber-300 whitespace-nowrap"
               onClick={openModal}
             >
               Watch Avalon
             </a>
 
             <a
-              className="flex items-center justify-center cursor-pointer font-semibold px-6 h-12 space-x-3 bg-transparent border border-gray-900 hover:text-slate-900
+              className="flex items-center justify-center cursor-pointer font-normal px-6 h-12 space-x-3 bg-transparent border border-gray-900 hover:text-zinc-900
               hover:bg-slate-100 focus:outline-none rounded-lg text-zinc-500
               dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700"
                 href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
