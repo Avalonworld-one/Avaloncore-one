@@ -19,7 +19,7 @@ const AvalonFeatures: React.FC = () => {
         >
           What&apos;s in AvalonCore?
         </h1>
-        <p className="text-zinc-400 font-light flex text-center items-center justify-center">
+        <p className="text-neutral-500 text-lg flex text-center items-center justify-center">
           Enhancing your metaverse journey with Indispensable services.
         </p>
       </div>

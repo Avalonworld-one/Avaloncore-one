@@ -35,7 +35,7 @@ const Introduction: React.FC = () => {
           >
             AvalonCore: Bridging Tech Divide Empower Business Expansion.
           </h1>
-          <p className="mt-6 text-lg text-zinc-400 font-light text-center max-w-3xl mx-auto dark:text-gray-400 whitespace-normal">
+          <p className="mt-6 text-lg text-neutral-500 text-center max-w-3xl mx-auto whitespace-normal">
             Embrace the future with Avalon, redefining the metaverse through
             decentralization. Let&apos;s innovate, connect, and flourish in the
             new digital society together.

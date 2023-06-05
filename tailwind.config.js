@@ -15,6 +15,9 @@ module.exports = {
     extend: {
       textColor: ['group-hover'],
       stroke: ['group-hover'],
+      boxShadow: {
+        custom: '0 8px 24px -8px rgba(0,0,0,.04), 0 1px 1px rgba(0,0,0,.04)',
+      },
     },
   },
 };

@@ -8,7 +8,7 @@ const Testimonials = () => {
     <section className="px-4 sm:px-6 md:px-8 py-20 text-white">
       <span className="flex align-top leading-6 items-center text-center justify-center ">
       <h1
-        className="max-w-xl text-3xl sm:text-4xl font-bold mb-8 shadow-md"
+        className="max-w-2xl text-3xl sm:text-4xl font-bold shadow-md"
         style={{
           backgroundImage:
             "linear-gradient(180deg, #fff, hsla(0, 0%, 100%, .75))",
@@ -18,12 +18,11 @@ const Testimonials = () => {
           WebkitTextFillColor: "transparent",
         }}
       >
-        Decentralized Solutions for Vital Transformations
+  
+  Web3.0 Evolution for Businesses
       </h1>
       </span>
-      <p className="flex justify-center items-center font-light text-zinc-400">
-        <span className="inline-block align-top max-w-2xl text-center">Avalon: Exceptional reliability, flexibility, and trusted by prominent Web3.0 leaders</span>
-      </p>
+      
 
 
       <div className="mx-auto mt-8 p-0 gap-4 flex flex-col md:flex-row items-center justify-center text-slate-200">

@@ -9,6 +9,7 @@ import ProductSection from '../components/ProductSection';
 import AvalonFeatures from '../components/AvalonFeatures';
 import Testimonials from '../components/Testimonials';
 import ContactUs from '@/components/ContactUs';
+import Reviews from '@/components/Reviews';
 
 
 const Homepage: NextPage = () => {
@@ -26,6 +27,7 @@ const Homepage: NextPage = () => {
         <AvalonFeatures />
         <ProductSection />
         <Testimonials />
+        <Reviews />
         <ContactUs />
       </Layout>
     </>

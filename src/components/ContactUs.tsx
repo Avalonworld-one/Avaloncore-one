@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="relative min-h-screen px-4 sm:px-18 lg:px-16 pb-10 bg-black text-white">
+    <div className="relative min-h-screen px-4 sm:px-18 mt-20 lg:px-16 pb-10 bg-black text-white">
       <div id="content" className="mx-auto max-w-7xl">
         <h2 className="text-sm md:text-base font-semibold mb-8">Contact</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
