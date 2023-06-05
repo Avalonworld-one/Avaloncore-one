@@ -8,6 +8,7 @@ import GradientLine from '../components/GradientLine';
 import ProductSection from '../components/ProductSection';
 import AvalonFeatures from '../components/AvalonFeatures';
 import Testimonials from '../components/Testimonials';
+import ContactUs from '@/components/ContactUs';
 
 
 const Homepage: NextPage = () => {
@@ -25,6 +26,7 @@ const Homepage: NextPage = () => {
         <AvalonFeatures />
         <ProductSection />
         <Testimonials />
+        <ContactUs />
       </Layout>
     </>
   );
