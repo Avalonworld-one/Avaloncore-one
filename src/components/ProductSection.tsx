@@ -1,44 +1,51 @@
-import React from 'react';
-import Image from 'next/image';
-import ProductImage from '../assets/twinmockf.svg';
-import Link from 'next/link';
+// components/ProductSection.tsx
+// Main component of the landing page
+import React from "react";
+import Image from "next/image";
+import ProductImage from "../assets/twinmockf.svg";
+import Link from "next/link";
 
-const ProductSection: React.FC = () => {
+const ProductSection = () => {
   return (
-    <div className="grid grid-cols-1 justify-center items-center py-8 md:py-16 px-4 gap-8">
-      <div className="order-1 md:text-left text-center">
-        <h2 className="font-sans tracking-wide font-bold text-4xl py-6 px-6 md:text-4xl text-center lg:text-5xl mb-4 leading-snug bg-gradient-to-r from-amber-400 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-          TRANSFORM YOUR BUSINESS WITH AVALON
-        </h2>
+    <section className="pt-20 px-4 sm:px-6 md:px-8" id="scholar-contract">
+      <div className="text-slate-200 flex flex-wrap justify-between items-center">
+        <div className="col-lg-6 my-8 md:my-0">
+          <Image
+            src={ProductImage}
+            alt="Product image"
+            width={551.3}
+            height={636}
+            quality={100}
+          />
+        </div>
 
-        <h3 className="font-sans tracking-tight text-center font-extrabold text-2xl md:text-2xl lg:text-3xl text-transparent mb-4 bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 bg-clip-text" style={{ backgroundSize: "200% 200%", backgroundPosition: "10% 0%, 30% 0%, 90% 0%" }}>
-          Scholar Contract
-        </h3>
+        <div className="w-full md:w-1/2 lg:w-1/3 p-4">
+          <p className="font-light whitespace-nowrap mb-4 text-zinc-400">
+            Step into the Avalon Ecosystem.
+          </p>
+          <h1
+            className="text-left items-center justify-center text-3xl sm:text-4xl font-bold mb-8 shadow-md"
+            style={{
+              backgroundImage:
+                "linear-gradient(180deg, #fff, hsla(0, 0%, 100%, .75))",
+              backgroundSize: "100% 200%",
+              backgroundPosition: "right bottom",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Boost GameFi with Scholar Contracts
+          </h1>
 
-        {/* 
-          create big space between the two lines 
-      */}
-
-        <div className="text-zinc-400 text-center tracking-wider max-w-full py-6 px-8 lg-6 mx-auto lg:mx-0 text-xl/loose">Leverage our Smart-Contract powered platform for seamless hiring, automating income distribution, employer allocations, and identity management. Transform your hiring experience now.</div>
-        {/*   
-        <Link href="/contact" passHref>
-          <button className="border border-gold-500 text-gold-500 px-4 py-2 hover:bg-gold-500 hover:text-white transition-colors">
-            Contact us
-          </button>
-        </Link> ***set the last page*/}
+          <p className="font-light text-zinc-400 md:text-lg mb-4">
+            Personalize rewards and delegate income sharing to Avalon&apos;s
+            automated smart contracts. Manage digital assets effortlessly with
+            Avalon Wallet. Take advantage of Avalon&apos;s robust features,
+            including analytics and decentralized identity solutions.
+          </p>
+        </div>
       </div>
-       <div className="order-2 flex justify-center items-center">
-        <div phone-mockup-container >
-        <Image
-          src={ProductImage}
-          alt="Product image"
-          width={551.3}
-          height={475}
-          quality={100}
-        />
-      </div>
-    </div>
-   </div>
+    </section>
   );
 };
 
