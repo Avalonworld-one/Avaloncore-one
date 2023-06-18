@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '18.x'
+          node-version: '10.x'
 
       - name: npm install, build, and test
         run: |
@@ -53,4 +53,4 @@ jobs:
           app-name: 'Avalonworldone'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7022EB3EB2BB402EB6F26933C98A0553 }}
-          package: .
+          images: 'contoso.azurecr.io/nodejssampleapp:${{ github.sha }}'
