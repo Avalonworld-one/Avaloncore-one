@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - avalonworldone
 on:
   push:
     branches:
-      - staging-slot
+      - my-feature-branch
   workflow_dispatch:
 
 jobs:
@@ -70,4 +70,4 @@ jobs:
           app-name: 'Avalonworldone'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7022EB3EB2BB402EB6F26933C98A0553 }}
-      
+        
