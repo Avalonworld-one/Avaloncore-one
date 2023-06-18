@@ -22,15 +22,15 @@ jobs:
     - name: Log in to registry
       uses: docker/login-action@v2
       with:
-        registry: https://contoso.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_201a1ed2c8e94660a6d71f025880ae18 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_451469a671b344a4ab8bc97c6375d89e }}
+        registry: https://avalonworldonereg.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_31a7a00f3bda40888af5d927d78c24a9 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_fd87cb7bcdee4a639a8af6f253f3cb9f }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: contoso.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_201a1ed2c8e94660a6d71f025880ae18 }}/nodejssampleapp:${{ github.sha }}
+        tags: avalonworldonereg.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_31a7a00f3bda40888af5d927d78c24a9 }}/nodejssampleapp:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'Avalonworldone'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ac1b8bd2c9dc4e42aa1a108287092b4c }}
-        images: 'contoso.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_201a1ed2c8e94660a6d71f025880ae18 }}/nodejssampleapp:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_53f4bc75c3264bba98f9d269678683db }}
+        images: 'avalonworldonereg.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_31a7a00f3bda40888af5d927d78c24a9 }}/nodejssampleapp:${{ github.sha }}'
