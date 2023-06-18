@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - avalonworldone
 on:
   push:
     branches:
-      - staging-slot
+      - my-feature-branch
   workflow_dispatch:
 
 jobs:
