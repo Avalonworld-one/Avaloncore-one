@@ -70,4 +70,4 @@ jobs:
           app-name: 'avalonworldone'
           slot-name: 'staging'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C39A59DADFB64A1B8E8F2F6346209430 }}
-          images: 'contoso.azurecr.io/nodejssampleapp:${{ github.sha }}'
+      
