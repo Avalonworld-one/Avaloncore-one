@@ -8,6 +8,7 @@ on:
     branches:
       - my-feature-branch
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: 'ubuntu-latest'
@@ -22,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://avalonworldonereg.azurecr.io/
-        username: avalonworldonereg
-        password: HlOvlBWn65Q40KVtr2oJZ2TJaP85whkstCXbzfMzkH+ACRDbWwUv
+        username: ${{ secrets.AzureAppService_ContainerUsername_b3525462ea0643ce83275558f9abcb53 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_085cbd2bdff245b7ad804d51b810f23a }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: avalonworldonereg.azurecr.io/nodejssampleapp:${{ github.sha }}  # note the change here as well
+        tags: avalonworldonereg.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b3525462ea0643ce83275558f9abcb53 }}/avalonworldonereg.azurecr.io:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -46,5 +47,5 @@ jobs:
       with:
         app-name: 'Avalonworldone'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_53f4bc75c3264bba98f9d269678683db }}
-        images: 'avalonworldonereg.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_31a7a00f3bda40888af5d927d78c24a9 }}/nodejssampleapp:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a3484d3332f641b388723f895bef0760 }}
+        images: 'avalonworldonereg.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b3525462ea0643ce83275558f9abcb53 }}/avalonworldonereg.azurecr.io:${{ github.sha }}'
