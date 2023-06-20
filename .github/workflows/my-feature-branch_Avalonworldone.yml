@@ -22,8 +22,8 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://avalonworldonereg.azurecr.io/
-        username: ${{ secrets.AZURE_USERNAME }}
-        password: ${{ secrets.AZURE_PASSWORD }} 
+        username: avalonworldonereg
+        password: HlOvlBWn65Q40KVtr2oJZ2TJaP85whkstCXbzfMzkH+ACRDbWwUv
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
