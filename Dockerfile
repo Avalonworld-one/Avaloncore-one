@@ -1,5 +1,5 @@
-# Use Node.js v14
-FROM node:14
+# Use Node.js v18
+FROM node:18
 
 # Create a directory in the container to hold the app
 WORKDIR /app
