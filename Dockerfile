@@ -1,5 +1,5 @@
-# Set the base image. This is the image your image will be based on
-FROM node:14-alpine
+# Use Node.js v14
+FROM node:14
 
 # Create a directory in the container to hold the app
 WORKDIR /app
@@ -7,17 +7,29 @@ WORKDIR /app
 # Copy the package.json and package-lock.json files into the container
 COPY package*.json ./
 
-# Install app dependencies inside the container
+# Check the filesystem state
+RUN ls -la
+
+# Install dependencies
 RUN npm install
+
+# Check the filesystem state
+RUN ls -la
 
 # Copy the rest of your app's source code from your host to your image filesystem
 COPY . .
 
+# Check the filesystem state
+RUN ls -la
+
 # Build the app
 RUN npm run build
+
+# Check the filesystem state
+RUN ls -la
 
 # Expose the port that your app will run on
 EXPOSE 8080
 
-# Command to start the application
-CMD ["npm", "run", "start"]
+# Run the app
+CMD [ "npm", "run", "start" ]
