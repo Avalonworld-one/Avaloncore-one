@@ -8,7 +8,6 @@ on:
     branches:
       - my-feature-branch
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: 'ubuntu-latest'
@@ -23,14 +22,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://avalonworldonereg.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_31a7a00f3bda40888af5d927d78c24a9 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_fd87cb7bcdee4a639a8af6f253f3cb9f }}
+        username: ${{ secrets.AZURE_USERNAME }}
+        password: ${{ secrets.AZURE_PASSWORD }} 
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: avalonworldonereg.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_31a7a00f3bda40888af5d927d78c24a9 }}/nodejssampleapp:${{ github.sha }}
+        tags: avalonworldonereg.azurecr.io/nodejssampleapp:${{ github.sha }}  # note the change here as well
         file: ./Dockerfile
 
   deploy:
