@@ -23,7 +23,7 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://avalonworldonereg.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_b3525462ea0643ce83275558f9abcb53 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_avalonworldonereg}}
         password: ${{ secrets.AzureAppService_ContainerPassword_085cbd2bdff245b7ad804d51b810f23a }}
 
     - name: Build and push container image to registry

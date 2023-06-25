@@ -4,32 +4,20 @@ FROM node:18
 # Create a directory in the container to hold the app
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files into the container
+# Copy package.json and package-lock.json to the app directory
 COPY package*.json ./
 
-# Check the filesystem state
-RUN ls -la
-
-# Install dependencies
+# Install app dependencies
 RUN npm install
 
-# Check the filesystem state
-RUN ls -la
-
-# Copy the rest of your app's source code from your host to your image filesystem
+# Copy the rest of the app code to the app directory
 COPY . .
 
-# Check the filesystem state
-RUN ls -la
-
-# Build the app
+# Build the Next.js app
 RUN npm run build
 
-# Check the filesystem state
-RUN ls -la
-
-# Expose the port that your app will run on
+# Expose the port the app runs on
 EXPOSE 8080
 
-# Run the app
+# Start the app
 CMD [ "npm", "run", "start" ]
