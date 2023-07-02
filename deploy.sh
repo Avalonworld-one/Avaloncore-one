@@ -1,99 +1,25 @@
 #!/bin/bash
-# ----------------------
-# KUDU Deployment Script
-# Version: 1.0.17
-# ----------------------
 
-# Helpers
-# -------
+# Update package list
+sudo dnf update -y
 
-exitWithMessageOnError () {
-  if [ ! $? -eq 0 ]; then
-    echo "An error has occurred during web site deployment."
-    echo $1
-    exit 1
-  fi
-}
+# Install curl (to download Node.js)
+sudo dnf install -y curl
 
-# Prerequisites
-# -------------
+# Download Node.js (replace 14.x with your desired version)
+curl -sL https://rpm.nodesource.com/setup_18.x | sudo -E bash -
 
-# Verify node.js installed
-hash node 2>/dev/null
-exitWithMessageOnError "Missing node.js executable, please install node.js, if already installed make sure it can be reached from current environment."
+# Install Node.js
+sudo dnf install -y nodejs
 
-# Setup
-# -----
+# Navigate to the app directory
+cd $WORKSPACE/Avaloncore-one
 
-SCRIPT_DIR="${BASH_SOURCE[0]%\\*}"
-SCRIPT_DIR="${SCRIPT_DIR%/*}"
-ARTIFACTS=$SCRIPT_DIR/../artifacts
-KUDU_SYNC_CMD=${KUDU_SYNC_CMD//\"}
+# Install dependencies
+npm install
 
-if [[ ! -n "$DEPLOYMENT_SOURCE" ]]; then
-  DEPLOYMENT_SOURCE=$SCRIPT_DIR
-fi
+# Build the app
+npm run build
 
-if [[ ! -n "$NEXT_MANIFEST_PATH" ]]; then
-  NEXT_MANIFEST_PATH=$ARTIFACTS/manifest
-
-  if [[ ! -n "$PREVIOUS_MANIFEST_PATH" ]]; then
-    PREVIOUS_MANIFEST_PATH=$NEXT_MANIFEST_PATH
-  fi
-fi
-
-if [[ ! -n "$DEPLOYMENT_TARGET" ]]; then
-  DEPLOYMENT_TARGET=$ARTIFACTS/wwwroot
-else
-  KUDU_SERVICE=true
-fi
-
-if [[ ! -n "$KUDU_SYNC_CMD" ]]; then
-  # Install kudu sync
-  echo Installing Kudu Sync
-  npm install kudusync -g --silent
-  exitWithMessageOnError "npm failed"
-
-  KUDU_SYNC_CMD=kuduSync
-fi
-
-# Node Helpers
-# ------------
-
-selectNodeVersion() {
-  if [[ -n "$1" ]]; then
-    NODE_EXE="$1/node"
-    NPM_CMD="$1/npm"
-    exitWithMessageOnError "Selected node version does not exists in your system, please install the required version and try again."
-  else
-    NODE_EXE=node
-    NPM_CMD=npm
-  fi
-}
-
-##################################################################################################################################
-# Deployment
-# ----------
-
-echo Handling node.js deployment.
-
-# 1. Select node version
-selectNodeVersion "$DEPLOYMENT_SOURCE/.nvmrc"
-
-# 2. Install npm packages
-if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
-  cd "$DEPLOYMENT_SOURCE"
-  echo "Running $NPM_CMD install --production"
-  $NPM_CMD install --production
-  exitWithMessageOnError "npm failed"
-  cd - > /dev/null
-fi
-
-# 3. KuduSync
-if [[ "$IN_PLACE_DEPLOYMENT" -ne "1" ]]; then
-  "$KUDU_SYNC_CMD" -q -f "$DEPLOYMENT_SOURCE" -t "$DEPLOYMENT_TARGET" -n "$NEXT_MANIFEST_PATH" -p "$PREVIOUS_MANIFEST_PATH" -i ".git;.hg;.deployment;deploy.sh"
-  exitWithMessageOnError "Kudu Sync failed"
-fi
-
-##################################################################################################################################
-echo "Finished successfully."
+# Start the app
+npm start
