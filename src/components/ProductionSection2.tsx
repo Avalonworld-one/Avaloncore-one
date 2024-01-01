@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ProductionSection2 = () => {
   return (
-    <section className="pt-20 py-20 px-4 sm:px-6 md:px-8">
+    <section className="pt-20 py-20 px-4 sm:px-6 md:px-8 order-1 md:order-2">
       <div className="text-slate-200 flex flex-wrap justify-center items-center">
 
         {/* Text on the left */}
@@ -43,8 +43,8 @@ const ProductionSection2 = () => {
 
 
           {/* "Learn More" button with custom styling */}
-          <div className="mt-10">
-            <Link href="/details" legacyBehavior>
+          <div className="mt-10 mb-20">
+            <Link href="Live-in/avalon" legacyBehavior>
               <a className="inline-block dark:bg-amber-400 hover:bg-yellow-300 text-black font-normal py-2 px-4 rounded transition-colors duration-300 ease-in-out">
                 Learn More
               </a>
@@ -53,7 +53,7 @@ const ProductionSection2 = () => {
         </div>
 
         {/* Local Video on the right */}
-        <div className="w-full md:w-1/2 lg:w-1/2 px-8">
+        <div className="w-full md:w-1/2 lg:w-1/2 px-8 order-1 md:order-2">
           <video 
             autoPlay
             loop

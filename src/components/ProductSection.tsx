@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ProductSection = () => {
   return (
-    <section className="pt-20 px-4 sm:px-6 md:px-8" id="scholar-contract">
+    <section className="pt-20 py-20 px-4 sm:px-6 md:px-8" id="scholar-contract">
       <div className="text-slate-200 flex flex-wrap justify-between items-center">
         <div className="col-lg-6 my-8 md:my-0">
           <Image
@@ -19,7 +19,7 @@ const ProductSection = () => {
           />
         </div>
 
-        <div className="w-full md:w-1/2 lg:w-1/3 p-4">
+        <div className="py-10 w-full md:w-1/2 lg:w-1/3 p-4">
           <p className="font-light whitespace-nowrap mb-4 text-zinc-400">
             Step into the Avalon Ecosystem.
           </p>
@@ -43,6 +43,11 @@ const ProductSection = () => {
             Avalon Wallet. Take advantage of Avalon&apos;s robust features,
             including analytics and decentralized identity solutions.
           </p>
+
+          {/* Coming Soon button */}
+          <button className="mt-4 bg-gray-500  text-white font-bold py-2 px-4 rounded">
+            Coming Soon
+          </button>
         </div>
       </div>
     </section>

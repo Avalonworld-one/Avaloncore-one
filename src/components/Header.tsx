@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                   <div className="-my-1 ml-2 -mr-1 md:hidden">
                     <button
                       type="button"
-                      className="text-gray-300 w-8 h-8 flex items-center justify-center hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+                      className="text-gray-300 w-8 h-8 flex items-center justify-center hover:text-zinc-600 dark:text-zinc-400 dark:hover:text-zinc-300"
                       onClick={() => setIsOpen(!isOpen)}
                     >
                       <span className="sr-only">Navigation</span>
@@ -61,17 +61,17 @@ const Header: React.FC = () => {
                           Home
                         </a>
                         <a
-                          href="#"
+                          href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
                           className="block px-4 py-2 text-gray-300 hover:text-gray-500 rounded-md"
                         >
                           Docs
                         </a>
-                        <a
+                        {/* <a
                           href="#"
                           className="block px-4 py-2 text-gray-300 hover:text-gray-500 rounded-md"
                         >
                           Pricing
-                        </a>
+                        </a> */}
                         <a
                           href="#"
                           className="block px-4 py-2 text-gray-300 hover:text-gray-500 rounded-md"
@@ -91,14 +91,14 @@ const Header: React.FC = () => {
               style={{ display: isOpen ? "block" : "none" }}
             >
               <div
-                className="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
+                className="fixed inset-0 bg-black/20 backdrop-blur-sm dark:bg-zinc-950/80"
                 aria-modal="true"
               ></div>
               <div className="block md:flex items-center space-x-1">
-                <nav className="fixed bg-neutral-950 w-full rounded-lg max-w-xs top-4 right-4 shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-slate-800 dark:text-slate-400 dark:highlight-white/5">
+                <nav className="fixed bg-zinc-900 w-full rounded-lg max-w-xs top-4 right-4 shadow-lg p-6 text-base font-semibold text-slate-900 dark:bg-zinc-900 dark:text-slate-400 dark:highlight-white/5">
                   <button
                     type="button"
-                    className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-gray-300 hover:text-gray-500 dark:text-slate-400 dark:hover:text-slate-300"
+                    className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center text-gray-300 hover:text-gray-500 dark:text-zinc-400 dark:hover:text-zinc-300"
                     tabIndex={0}
                     onClick={() => setIsOpen(false)}
                   >
@@ -134,14 +134,14 @@ const Header: React.FC = () => {
                         Docs
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="#"
                         className="text-gray-300 hover:text-gray-500 dark:hover-text-gray-400 rounded-md"
                       >
                         Pricing
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         href="#"
