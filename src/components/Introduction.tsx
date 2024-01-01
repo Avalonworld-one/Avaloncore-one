@@ -42,27 +42,20 @@ const Introduction: React.FC = () => {
           </p>
 
           <div className="mt-20 sm:mt-10 flex justify-center gap-4 text-sm">
-            <a
-              className="bg-amber-400 cursor-pointer text-center flex items-center sm:w-auto justify-center focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
-              focus:ring-offset-slate-50 text-black font-normal border border-transparent h-12 px-4 space-x-3 rounded-lg dark:bg-yellow-500 dark:highlight-white/20 hover:bg-amber-300 whitespace-nowrap"
-              onClick={openModal}
-            >
-              Watch Avalon
-            </a>
+    
 
-            <a
-              className="flex items-center justify-center cursor-pointer font-normal px-6 h-12 space-x-3 bg-transparent border border-gray-900 hover:text-zinc-900
-              hover:bg-slate-100 focus:outline-none rounded-lg text-zinc-500
-              dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700"
-                href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
-                target="_blank"
-              >
-                Whitepaper     
+          <a
+            className="inline-block bg-amber-400 hover:bg-yellow-300 text-black font-bold py-3 px-4 text-lg rounded transition-colors duration-300 ease-in-out mt-4"
+            href="https://intechwetrust.gitbook.io/avalon-unified-operating-system-white-paper-v-1.2/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+                Get Started
               </a>
         
           </div>
 
-          <div className="flex flex-col items-center w-full mt-20 sm:mt-32 md:mt-40">
+          {/* <div className="flex flex-col items-center w-full mt-20 sm:mt-32 md:mt-40">
             <Image
               src={MockupImage}
               alt="Phone mockup"
@@ -70,7 +63,7 @@ const Introduction: React.FC = () => {
               height={636}
               quality={75}
             />
-          </div>
+          </div> */}
 
           <Modal
             isOpen={modalIsOpen}

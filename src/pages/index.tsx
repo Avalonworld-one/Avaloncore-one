@@ -10,6 +10,7 @@ import AvalonFeatures from '../components/AvalonFeatures';
 import Testimonials from '../components/Testimonials';
 import ContactUs from '@/components/ContactUs';
 import Reviews from '@/components/Reviews';
+import ProductionSection2 from '@/components/ProductionSection2';
 
 
 const Homepage: NextPage = () => {
@@ -25,6 +26,7 @@ const Homepage: NextPage = () => {
         <Introduction />
         <GradientLine />
         <AvalonFeatures />
+        <ProductionSection2 />
         <ProductSection />
         <Testimonials />
         <Reviews />
